@@ -1,0 +1,21 @@
+{
+  "$id": "person",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "An address similar to http://microformats.org/wiki/h-card",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "address": {
+      "type": "object",
+      "$ref": "../../schema/common/Address.json"
+    }
+
+  },
+  "required": [ "firstName", "lastName", "address" ]
+
+}
